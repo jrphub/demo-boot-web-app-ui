@@ -1,1 +1,1 @@
-web: java -cp target/classes:target/dependency/* WebApplication
+web: java -jar target/demo-boot-1.0-RELEASE.jar

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>demo</artifactId>
-    <name>DemoApp</name>
+    <artifactId>demo-boot</artifactId>
+    <name>DemoBoot</name>
     <description>Demo App using Spring boot</description>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
+    <version>1.0-RELEASE</version>
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -13,6 +14,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.7</java.version>
     </properties>
 
@@ -31,6 +33,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
+        
+        <dependency>
+      		<groupId>org.springframework.boot</groupId>
+     		<artifactId>spring-boot-devtools</artifactId>
+      		<scope>runtime</scope>
+   		</dependency>
         
         <!-- Database -->
         
@@ -79,17 +87,24 @@
     <build>
         <plugins>
             <plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<version>2.4</version>
-				<executions>
-				  <execution>
-					<id>copy-dependencies</id>
-					<phase>package</phase>
-					<goals><goal>copy-dependencies</goal></goals>
-				  </execution> 
-				</executions>
-			</plugin>
+		        <groupId>org.springframework.boot</groupId>
+		        <artifactId>spring-boot-maven-plugin</artifactId>
+		        <executions>
+		          <execution>
+		            <goals>
+		              <goal>repackage</goal>
+		            </goals>
+		            <configuration>
+		              <additionalProperties>
+		                <encoding.source>${project.build.sourceEncoding}</encoding.source>
+		                <encoding.reporting>${project.reporting.outputEncoding}</encoding.reporting>
+		                <java.source>${maven.compiler.source}</java.source>
+		                <java.target>${maven.compiler.target}</java.target>
+		              </additionalProperties>
+		            </configuration>
+		          </execution>
+		        </executions>
+		      </plugin>
         </plugins>
     </build>
 </project>
