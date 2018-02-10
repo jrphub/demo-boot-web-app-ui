@@ -43,22 +43,22 @@
         <!-- Database -->
         
 		<!-- For HSQL -->
-		 <!-- 
+		 
         <dependency>
             <groupId>org.hsqldb</groupId>
             <artifactId>hsqldb</artifactId>
             <scope>runtime</scope>
         </dependency>
-          -->
+        
         
         <!-- For MySql -->
-        
+        <!-- 
         <dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		
+		 -->		
 		
 		<!-- For Postgres -->
 		<!-- 
