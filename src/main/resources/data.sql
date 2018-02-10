@@ -1,4 +1,4 @@
-/* Uncomment for in-memory database only i.e. LOCAL*/
+/* Comment for non-in-memory databases and run it manual ex- MySQL*/
 
 insert into tbl_doc (id, description, link, title, user_id) values(01, 'yellow rose png', 'https://www.gstatic.com/webp/gallery3/1.png', 'Yellow Rose', 01);
 insert into tbl_doc (id, description, link, title, user_id) values(02, 'baby tux for user page', 'https://www.gstatic.com/webp/gallery3/2.png', 'Baby Tux', 01);

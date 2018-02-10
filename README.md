@@ -1,6 +1,21 @@
 # Demo Web Application with Spring Security, Spring Boot, Spring Data JPA, HSQL, JSP
 
+## Demo
+
+The "feature" branch of this project is deployed to heroku and can be seen @ this url https://dboot.herokuapp.com/
+
+To login using existing user :
+
+username : testuser01
+
+password : testuser01
+
+You can sign up as new user using registration link also.
+
+The dashboard is auto populated for first two users. One among those user is testuser01. The second one has not been created by me. You can sign up.
+
 ## Prerequisites
+
 - JDK 1.7 or later
 - Maven 3 or later
 
