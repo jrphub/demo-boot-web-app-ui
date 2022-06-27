@@ -2,7 +2,7 @@
 
 ## Demo
 
-The "feature" branch of this project is deployed to heroku and can be seen @ this url https://dboot.herokuapp.com/
+The "feature" branch of this project is deployed to heroku and can be seen @ this url https://dboot.herokuapp.com/ (link not working - please refer local set up in "Run" section )
 
 To login using existing user :
 
@@ -28,7 +28,7 @@ The dashboard is auto populated for first two users. One among those user is tes
 - HSQL or Mysql or Postgres or any database with JDBC support
 
 ## Run
-
+### local set up
 Go to project directory and run below command
 
 ```mvn clean spring-boot:run```
@@ -82,7 +82,7 @@ You can run the application as it is to use this database. This runs data.sql fi
 
 To use mysql as database, you need to have mysql-server running at some host and port. The database must have been created before.
 
-(To install mysql on linux [ubuntu] : http://www.iamjrp.com/2017/mssql-on-Linux-cli/)
+(To install mysql on linux [ubuntu] : https://www.geeksforgeeks.org/how-to-install-mysql-on-linux/)
 
 Changes needed are :
 
@@ -96,7 +96,7 @@ Changes needed are :
 
 Similar to mysql, to use postgres as database, you need to have postgres server running at some host and port. The database must have been created before.
 
-(To install Postgres on linux [ubuntu] : http://www.iamjrp.com/2017/installing-postgres/ )
+(To install Postgres on linux [ubuntu] : https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql-linux/ )
 
 Changes needed are :
 
